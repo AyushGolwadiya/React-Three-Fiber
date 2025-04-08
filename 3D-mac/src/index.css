@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'mac1';
+  src: url('/sf-pro-text_regular.woff2');
+}
+
+body{
+  background-color: #000;
+  font-family: mac1;
+  color: #e7f4fc;
+}
+#root{
+  width: 100%;
+  height: 100vh;
+}
+
+.masked{
+  position: relative;
+  background:url('https://www.apple.com/v/macbook-air/u/images/overview/apple-intelligence/apple_intelligence_privacy_gradient__fwor1tjecwy2_small.jpg') no-repeat center center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.masked::before{
+  content: "macbook pro.";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:url('https://www.apple.com/v/macbook-air/u/images/overview/apple-intelligence/apple_intelligence_privacy_gradient__fwor1tjecwy2_small.jpg') no-repeat;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  filter: blur(40px);
+}
+.masked::after{
+  position: absolute;
+  background:url('https://www.apple.com/v/macbook-air/u/images/overview/apple-intelligence/apple_intelligence_privacy_gradient__fwor1tjecwy2_small.jpg') no-repeat;
+  background-size: cover;
+  background-clip: text;
+  color: transparent;
+  filter: blur(30px);
+}
