@@ -1,11 +1,9 @@
-
+import { motion } from 'motion/react';
 export const Teeth = () => {
 
   return (
     <group>
-      <mesh position-x={-1} position-y={-1} animate={{
-        y:0,
-      }}>
+      <mesh position-x={-1} position-y={-1} >
         <coneGeometry args={[0.5, 1, 4]} />
         <meshStandardMaterial color="#ffffff" />
       </mesh>

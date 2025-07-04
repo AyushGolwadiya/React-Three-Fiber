@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: 'apple1';
+  src: url('../sf-pro-text_regular.woff2');
+}
+
+body{
+  background-color: #050505;
+  color: white;
+  font-family: "apple1";
+}
